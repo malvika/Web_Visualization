@@ -1,0 +1,17 @@
+.right{
+  float: right;
+}
+.image{
+  height: 50px;
+  width: 50px;
+}
+.heading{
+  color: rgb(55, 180, 178);
+}
+.body{
+  background: rgb(186, 186, 186);
+  font-size: 15px;
+}
+.head{
+  background: white
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Malvika's Latitude Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxvsNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <body>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          </div>
+
+</head>
+<body class="body">
+    <head>
+        <ul class="nav nav-pills head">
+            <li class="label label-info"><a href="index.html"><h4>Latitude</h4></a></li>
+            <li class="pull-right" role="presentation"><a href="comparison.html">Comparison</a></li>
+            <li class="pull-right" role="presentation"><a href="data.html">Data</a></li>
+            <li class="dropdown pull-right">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Plots
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="Temp.html">Latitude vs Temperature</a></li>
+                    <li><a href="Clouds.html">Latitude vs Cloudiness</a></li>
+                    <li><a href="Wind.html">Latitude vs Wind</a></li>
+                    <li><a href="Humidity.html">Latitude vs Humidity</a></li>
+                </ul>
+            </li>
+        </ul>
+    </head>
+    <div class="container">
+        <div class="row">
+            <br>
+            <br>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3 class="heading">Summary Latitude vs. X</h3>
+                        <br>
+                        <div class="media">
+                            <div class="media-left">
+                                <img class="media-object" src="Temperature.png" alt="latitude vs temperature" width="200px" height="200px">
+                            </div>
+                            <div class="media-body">
+                                The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data frrom the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                                <br>
+                                <br>
+                                After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3 class="heading"> Visualizations</h3>
+                        <br>
+                        <a href="Temp.html"><img src="Temperature.png" width="150px" height="150px"></a>
+                        <a href="Wind.html"><img src="WindSpeed.png" width="150px" height="150px"></a>
+                        <a href="Humidity.html"><img src="Humidity.png" width="150px" height="150px"></a>
+                        <a href="Clouds.html"><img src="Cloud.png" width="150px" height="150px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
